@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+  --navy:#092f3a;
+  --navy-2:#061f27;
+  --gold:#f3c43e;
+  --red:#e9283f;
+  --cream:#f8f5ec;
+  --white:#fff;
+  --ink:#13252b;
+  --muted:#66777b;
+  --line:#dfe5e4;
+  --shadow:0 20px 60px rgba(6,31,39,.12);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,229,228,.75)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}
+.logo img{width:58px;height:58px;object-fit:contain}
+.logo span{font-size:18px}
+.nav-links{display:flex;gap:24px;align-items:center;font-size:14px;font-weight:600}
+.nav-links a{color:#385057;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--red)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:999px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}
+.nav-cta,.btn-primary{background:var(--red);color:white;box-shadow:0 10px 24px rgba(233,40,63,.2)}
+.nav-cta:hover,.btn-primary:hover{transform:translateY(-2px);background:#cf1930}
+.btn-secondary{background:var(--white);border-color:var(--line);color:var(--navy)}
+.btn-secondary:hover{border-color:var(--gold);transform:translateY(-2px)}
+.menu-btn{display:none;background:none;border:0;font-size:27px}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(243,196,62,.2),transparent 27%),linear-gradient(135deg,var(--navy-2),var(--navy));color:white;padding:100px 0 88px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:70px}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:12px}
+.hero h1{font:700 clamp(46px,6vw,78px)/1.02 "Playfair Display",serif;margin:16px 0 22px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#d6e2e3;max-width:620px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.hero .btn-secondary{background:transparent;color:white;border-color:rgba(255,255,255,.28)}
+.hero-art{min-height:430px;display:grid;place-items:center;position:relative}
+.hero-ring{width:min(380px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid rgba(243,196,62,.38);display:grid;place-items:center;position:relative}
+.hero-ring:before,.hero-ring:after{content:"";position:absolute;inset:28px;border:1px dashed rgba(255,255,255,.25);border-radius:50%}
+.hero-ring:after{inset:-20px;border:1px solid rgba(233,40,63,.28)}
+.hero-logo{width:240px;filter:drop-shadow(0 25px 35px rgba(0,0,0,.3))}
+.stats{margin-top:-40px;position:relative;z-index:2}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:white;border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.stat{padding:27px;border-right:1px solid var(--line);text-align:center}
+.stat:last-child{border:0}.stat strong{display:block;font-size:31px;color:var(--navy)}.stat span{font-size:13px;color:var(--muted)}
+.section{padding:95px 0}.section-alt{background:var(--cream)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+.section-head h2{margin:8px 0 0;font:700 clamp(34px,4vw,52px)/1.08 "Playfair Display",serif;color:var(--navy)}
+.section-head p{max-width:520px;color:var(--muted);margin:0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 8px 30px rgba(6,31,39,.04);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#fff4d0;color:var(--navy);font-size:21px;margin-bottom:20px}
+.card h3{margin:0 0 9px;color:var(--navy);font-size:21px}.card p{color:var(--muted);margin:0}
+.about-split{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.about-visual{background:var(--navy);border-radius:30px;min-height:440px;display:grid;place-items:center;overflow:hidden;position:relative}
+.about-visual img{width:270px;position:relative;z-index:2}
+.about-visual:before{content:"";width:370px;height:370px;border:1px solid rgba(243,196,62,.4);border-radius:50%;position:absolute}
+.kicker{font-weight:800;color:var(--red);font-size:13px;text-transform:uppercase;letter-spacing:.12em}
+.about-copy h2{font:700 48px/1.08 "Playfair Display",serif;color:var(--navy);margin:10px 0 20px}
+.checks{display:grid;gap:13px;margin:25px 0}.check{display:flex;gap:11px}.check b{color:var(--red)}
+.page-hero{padding:80px 0;background:linear-gradient(135deg,var(--navy-2),var(--navy));color:white}
+.page-hero h1{font:700 clamp(44px,6vw,68px)/1.05 "Playfair Display",serif;margin:10px 0}.page-hero p{max-width:680px;color:#d6e2e3;font-size:17px}
+.brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.brand{min-height:190px;border-radius:22px;background:var(--cream);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px}.brand-mark{font:700 34px "Playfair Display",serif;color:var(--navy)}.brand small{color:var(--muted);margin-top:6px}
+.service-list{display:grid;gap:18px}.service-row{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:25px;padding:25px;border:1px solid var(--line);border-radius:20px}.service-num{font:700 30px "Playfair Display",serif;color:var(--gold)}.service-row h3{margin:0;color:var(--navy)}.service-row p{margin:4px 0 0;color:var(--muted)}
+.portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{min-height:330px;border-radius:25px;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--navy),#164d59);padding:30px;display:flex;align-items:end;color:white}.project:nth-child(2){background:linear-gradient(135deg,#a7192c,#ed7b32)}.project:nth-child(3){background:linear-gradient(135deg,#0b4d4c,#c69a35)}.project:nth-child(4){background:linear-gradient(135deg,#1f2949,#6b3c7c)}.project-content{position:relative;z-index:2}.project h3{font:700 30px "Playfair Display",serif;margin:5px 0}.project p{color:#e9eeee;margin:0}.project:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.25);border-radius:50%;right:-50px;top:-50px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.post{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white}.post-img{height:190px;background:linear-gradient(135deg,var(--navy),#437b7e);position:relative}.post:nth-child(2) .post-img{background:linear-gradient(135deg,#e5b833,#c53b42)}.post:nth-child(3) .post-img{background:linear-gradient(135deg,#233a5a,#8a5b46)}.post-img:before{content:"AGE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.16);font:700 70px "Playfair Display",serif}.post-body{padding:23px}.post-meta{font-size:12px;color:var(--red);font-weight:700}.post h3{font-size:20px;color:var(--navy);margin:8px 0}.post p{color:var(--muted);font-size:14px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.contact-box{background:var(--navy);color:white;border-radius:26px;padding:35px}.contact-box h2{font:700 38px "Playfair Display",serif;margin-top:0}.contact-item{padding:18px 0;border-top:1px solid rgba(255,255,255,.14)}.contact-item span{display:block;color:#9fb1b5;font-size:12px;text-transform:uppercase;letter-spacing:.1em}.contact-item a{font-weight:600}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:var(--navy)}.field input,.field textarea,.field select{width:100%;padding:14px 15px;border:1px solid var(--line);border-radius:12px;font:inherit;outline:none;background:white}.field textarea{min-height:150px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(243,196,62,.15)}
+.cta{padding:70px 0;background:var(--gold)}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font:700 42px "Playfair Display",serif;color:var(--navy);margin:0}
+.footer{background:var(--navy-2);color:#c7d5d7;padding:60px 0 25px}.footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr .9fr;gap:45px}.footer .logo{color:white}.footer h4{color:white;margin-top:0}.footer a{display:block;margin:8px 0;color:#b4c6c9;font-size:14px}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:900px){.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;left:4%;right:4%;top:75px;background:white;border:1px solid var(--line);border-radius:18px;padding:20px;flex-direction:column;align-items:stretch;box-shadow:var(--shadow)}.hero-grid,.about-split,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:330px}.stats-grid{grid-template-columns:1fr 1fr}.grid-3,.brand-grid,.blog-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.cta-inner{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.nav{height:72px}.logo img{width:48px;height:48px}.hero{padding:65px 0}.hero h1{font-size:47px}.section{padding:70px 0}.stats-grid,.grid-3,.brand-grid,.blog-grid,.portfolio{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section-head{display:block}.about-copy h2{font-size:39px}.service-row{grid-template-columns:55px 1fr}.service-row .btn{display:none}.form{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:8px}}
+/* AGE liquid-glass upgrade */
+body{background:#f5f7f5}.site-header{background:rgba(8,36,44,.82);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 35px rgba(3,20,25,.14)}.site-header .logo span,.nav-links a{color:#f8f5ec}.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.glass{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 55px rgba(0,0,0,.14);backdrop-filter:blur(18px) saturate(130%)}
+.hero{min-height:720px;background:radial-gradient(circle at 82% 15%,rgba(243,196,62,.2),transparent 24%),radial-gradient(circle at 12% 80%,rgba(233,40,63,.17),transparent 28%),linear-gradient(135deg,#061f27,#0b4350)}
+.hero-grid{position:relative}.hero-panel{padding:42px;border-radius:32px}.hero-art{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.15);border-radius:38px;backdrop-filter:blur(12px);box-shadow:inset 0 1px rgba(255,255,255,.18),0 30px 70px rgba(0,0,0,.18)}
+.hero-image{position:absolute;inset:18px;border-radius:30px;background:url('https://asiagroupofevents.pk/wp-content/uploads/2026/06/sidebar-img-2.jpg') center/cover;opacity:.22;mix-blend-mode:screen}.hero-art>*:not(.hero-image){z-index:2}.floating{position:absolute;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(16px);padding:13px 16px;border-radius:18px;color:white;font-size:12px;box-shadow:0 12px 30px rgba(0,0,0,.18)}.float-a{top:11%;right:-4%}.float-b{bottom:13%;left:-4%}
+.section-alt{background:linear-gradient(135deg,#eef1eb,#faf9f4)}.card,.post,.brand,.service-row,.stats-grid{background:rgba(255,255,255,.72);backdrop-filter:blur(15px);border-color:rgba(9,47,58,.1)}.card,.post,.brand,.service-row{box-shadow:0 15px 45px rgba(6,31,39,.07)}
+.image-card{min-height:270px;border-radius:26px;background-size:cover;background-position:center;position:relative;overflow:hidden;color:white;display:flex;align-items:end;padding:25px}.image-card:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(3,20,25,.86))}.image-card>*{position:relative;z-index:2}.image-card h3{margin:5px 0;font:700 27px 'Playfair Display',serif}.image-card p{margin:0;color:#edf4f4;font-size:14px}
+.gallery-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-auto-rows:260px;gap:18px}.gallery-grid .wide{grid-row:span 2}.gallery-grid .tall{grid-row:span 2}.ig{background:linear-gradient(135deg,#061f27,#124c58);color:white;padding:45px;border-radius:30px;position:relative;overflow:hidden}.ig:before{content:'@asiagroupofevents';position:absolute;font-size:90px;font-weight:800;opacity:.035;white-space:nowrap;transform:rotate(-12deg);right:-80px;bottom:10px}.ig a{color:white}.ig .btn{margin-top:20px}
+.timeline{display:grid;gap:0}.timeline-item{display:grid;grid-template-columns:130px 1fr;gap:30px;padding:28px 0;border-top:1px solid var(--line)}.timeline-year{font:700 30px 'Playfair Display',serif;color:var(--red)}.timeline-item h3{margin:0;color:var(--navy)}.timeline-item p{margin:5px 0;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid .wide,.gallery-grid .tall{grid-row:span 1}.float-a{right:2%}.float-b{left:2%}.timeline-item{grid-template-columns:85px 1fr}}
+@media(max-width:600px){.hero-panel{padding:15px}.gallery-grid{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:5px}}
+
+.legal-nav{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0}.legal-nav a{color:inherit;text-decoration:none;opacity:.85}.legal-nav a:hover{opacity:1}.legal-page{max-width:900px;margin:0 auto;padding:80px 0}.legal-page h1{font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,72px);margin-bottom:18px}.legal-page h2{margin-top:38px}.legal-page p,.legal-page li{line-height:1.8}.legal-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:28px;backdrop-filter:blur(18px)}
