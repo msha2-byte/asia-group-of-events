@@ -1,11 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Discover the story, people, values and milestones behind Asia Group of Events — trusted event management in Pakistan since 1980.">
-  <title>About Us | Asia Group of Events</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The story, people, values and milestones behind Asia Group of Events — trusted event management in Pakistan since 1980.">
+<title>About Us | Asia Group of Events</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ABOUT PAGE — self-contained enhancement. It still uses the site's global stylesheet, but works visually even if that file is cached. */
+:root{--age-navy:#092f3a;--age-deep:#061f27;--age-gold:#f3c43e;--age-red:#e9283f;--age-cream:#f7f4ea;--age-muted:#66777b;--age-line:rgba(9,47,58,.12)}
+.aboutx{font-family:Arial,Helvetica,sans-serif;color:var(--age-navy);overflow:hidden}
+.aboutx *{box-sizing:border-box}.aboutx button,.aboutx a{font:inherit}.aboutx .ax-container{width:min(1180px,calc(100% - 40px));margin:auto}
+.ax-hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--age-deep),var(--age-navy));padding:92px 0 72px;isolation:isolate}
+.ax-hero:before,.ax-hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:-1}.ax-hero:before{width:430px;height:430px;right:-120px;top:-170px;background:radial-gradient(circle,rgba(243,196,62,.2),transparent 68%)}.ax-hero:after{width:340px;height:340px;left:-170px;bottom:-190px;background:radial-gradient(circle,rgba(233,40,63,.16),transparent 68%)}
+.ax-eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--age-gold);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12px}.ax-eyebrow:before{content:"";width:28px;height:2px;background:var(--age-gold)}
+.ax-hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}.ax-hero h1{font:700 clamp(44px,6vw,76px)/.98 Georgia,serif;letter-spacing:-2px;margin:18px 0}.ax-hero p{max-width:720px;color:#d9e5e7;font-size:18px;line-height:1.8}.ax-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ax-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid transparent;cursor:pointer}.ax-btn-gold{background:var(--age-gold);color:var(--age-deep)}.ax-btn-outline{border-color:rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.06)}
+.ax-glass{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.075);backdrop-filter:blur(18px);border-radius:28px;padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.2)}.ax-logo-box{height:190px;border-radius:20px;background:rgba(255,255,255,.07);display:grid;place-items:center}.ax-logo-box img{width:150px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.25))}.ax-mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}.ax-mini-stat{padding:16px 12px;border-radius:16px;background:rgba(255,255,255,.06);transition:.25s}.ax-mini-stat:hover{transform:translateY(-4px);background:rgba(255,255,255,.11)}.ax-mini-stat strong{display:block;color:var(--age-gold);font:700 25px Georgia,serif}.ax-mini-stat span{display:block;color:#d5e1e3;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-top:5px}
+.ax-section{padding:82px 0}.ax-section.alt{background:var(--age-cream)}.ax-section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.ax-kicker{color:var(--age-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.14em}.ax-section h2{font:700 clamp(32px,4vw,52px)/1.05 Georgia,serif;margin:8px 0;color:var(--age-navy);letter-spacing:-1px}.ax-section-head>p{max-width:500px;color:var(--age-muted);line-height:1.7}
+.ax-story-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}.ax-story{min-height:280px;padding:28px;border-radius:24px;background:#fff;border:1px solid var(--age-line);position:relative;overflow:hidden;transition:.25s}.ax-story:hover{transform:translateY(-6px);box-shadow:0 22px 55px rgba(9,47,58,.1)}.ax-story.dark{background:var(--age-navy);color:#fff;border-color:var(--age-navy)}.ax-story .num{font:700 13px Georgia,serif;color:var(--age-red)}.ax-story.dark .num{color:var(--age-gold)}.ax-story h3{font-size:23px;margin:48px 0 12px}.ax-story p{color:var(--age-muted);line-height:1.75}.ax-story.dark p{color:#d7e4e6}.ax-story button{border:0;background:none;color:var(--age-red);font-weight:800;cursor:pointer;padding:0;margin-top:12px}.ax-story.dark button{color:var(--age-gold)}
+.ax-timeline-wrap{position:relative}.ax-filter-row{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 14px}.ax-filter{border:1px solid var(--age-line);background:#fff;color:var(--age-navy);padding:10px 15px;border-radius:999px;font-weight:800;cursor:pointer}.ax-filter.active,.ax-filter:hover{background:var(--age-navy);color:#fff;border-color:var(--age-navy)}.ax-progress{height:5px;background:rgba(9,47,58,.1);border-radius:10px;overflow:hidden;margin-bottom:24px}.ax-progress span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--age-red),var(--age-gold));transition:width .35s ease}
+.ax-timeline{position:relative;display:grid;gap:12px}.ax-timeline:before{content:"";position:absolute;left:70px;top:20px;bottom:20px;width:2px;background:linear-gradient(var(--age-gold),var(--age-red));opacity:.35}.ax-event{position:relative;border:1px solid var(--age-line);background:rgba(255,255,255,.85);border-radius:20px;overflow:hidden;margin-left:0}.ax-event summary{display:grid;grid-template-columns:105px 1fr 34px;align-items:center;gap:14px;list-style:none;cursor:pointer;padding:20px 22px}.ax-event summary::-webkit-details-marker{display:none}.ax-event summary:after{content:"+";font-size:24px;color:var(--age-red);text-align:center}.ax-event[open] summary:after{content:"−"}.ax-year{font:700 25px Georgia,serif;color:var(--age-red);position:relative;z-index:1}.ax-event strong{display:block;font-size:18px}.ax-event small{display:block;color:var(--age-muted);margin-top:5px;line-height:1.5}.ax-event-body{padding:0 22px 22px 127px;color:var(--age-muted);line-height:1.7}.ax-tag{display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(243,196,62,.2);color:#725900;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.ax-values{display:grid;grid-template-columns:260px 1fr;border:1px solid var(--age-line);border-radius:26px;overflow:hidden;background:#fff}.ax-tabs{padding:12px;background:rgba(9,47,58,.035);border-right:1px solid var(--age-line)}.ax-tab{width:100%;text-align:left;border:0;background:none;border-radius:14px;padding:15px;color:var(--age-muted);font-weight:800;cursor:pointer}.ax-tab.active{background:var(--age-navy);color:#fff}.ax-panel{padding:52px;display:grid;grid-template-columns:84px 1fr;gap:25px;align-items:start}.ax-icon{width:70px;height:70px;border-radius:20px;background:var(--age-cream);display:grid;place-items:center;color:var(--age-red);font:700 22px Georgia,serif}.ax-panel h3{font:700 38px Georgia,serif;margin:3px 0 10px}.ax-panel p{color:var(--age-muted);font-size:17px;line-height:1.8;margin:0;max-width:680px}
+.ax-team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.ax-person{border:1px solid var(--age-line);background:#fff;border-radius:20px;padding:22px;cursor:pointer;text-align:left;min-height:155px;transition:.22s}.ax-person:hover,.ax-person.active{transform:translateY(-3px);box-shadow:0 16px 35px rgba(9,47,58,.08);border-color:var(--age-navy)}.ax-person .idx{color:var(--age-red);font:700 12px Georgia,serif}.ax-person strong{display:block;margin-top:38px;font-size:17px}.ax-person span{display:block;color:var(--age-muted);font-size:13px;margin-top:5px}.ax-team-detail{margin-top:14px;border-radius:22px;padding:30px;background:var(--age-navy);color:#fff}.ax-team-detail .role{color:var(--age-gold);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:11px}.ax-team-detail h3{font:700 31px Georgia,serif;margin:8px 0 4px}.ax-team-detail p{color:#d7e4e6;line-height:1.75;max-width:850px}
+.ax-cities{display:flex;flex-wrap:wrap;gap:10px}.ax-city{padding:11px 15px;background:#fff;border:1px solid var(--age-line);border-radius:999px;font-weight:800;box-shadow:0 8px 22px rgba(9,47,58,.04)}.ax-city.featured{background:var(--age-navy);color:#fff;border-color:var(--age-navy)}
+.ax-cta{background:var(--age-navy);border-radius:30px;padding:46px;color:#fff;display:flex;justify-content:space-between;gap:30px;align-items:center}.ax-cta h2{color:#fff;margin:0 0 10px}.ax-cta p{color:#d7e4e6;margin:0;line-height:1.7}.ax-reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.ax-reveal.show{opacity:1;transform:none}.ax-hidden{display:none!important}
+@media(max-width:900px){.ax-hero-grid{grid-template-columns:1fr}.ax-story-grid{grid-template-columns:1fr 1fr}.ax-story:last-child{grid-column:1/-1}.ax-values{grid-template-columns:1fr}.ax-tabs{display:flex;overflow:auto;border-right:0;border-bottom:1px solid var(--age-line)}.ax-tab{white-space:nowrap;width:auto}.ax-team-grid{grid-template-columns:1fr 1fr}.ax-section-head{display:block}.ax-section-head>p{margin-top:14px}}
+@media(max-width:600px){.aboutx .ax-container{width:min(100% - 28px,1180px)}.ax-hero{padding:65px 0 55px}.ax-hero h1{font-size:46px}.ax-hero p{font-size:16px}.ax-mini-stats{grid-template-columns:1fr}.ax-story-grid,.ax-team-grid{grid-template-columns:1fr}.ax-story:last-child{grid-column:auto}.ax-section{padding:60px 0}.ax-event summary{grid-template-columns:70px 1fr 26px;padding:17px}.ax-event-body{padding:0 18px 20px 18px}.ax-timeline:before{display:none}.ax-panel{grid-template-columns:1fr;padding:30px}.ax-cta{display:block;padding:30px}.ax-cta .ax-btn{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.ax-reveal{opacity:1;transform:none;transition:none}.ax-story,.ax-mini-stat,.ax-person{transition:none}.ax-progress span{transition:none}}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -18,164 +40,88 @@
   </div>
 </header>
 
-<main>
-  <section class="about-hero">
-    <div class="container about-hero-grid">
-      <div class="about-hero-copy reveal">
-        <div class="eyebrow">1980 → today · Gujranwala → Pakistan</div>
-        <h1>Four decades of turning occasions into experiences.</h1>
-        <p>Asia Group of Events has grown from a local event operation into a multi-service events group built around one idea: when the details are handled properly, people remember how an event made them feel.</p>
-        <div class="about-hero-actions">
-          <a class="btn btn-primary" href="#story">Explore our story</a>
-          <a class="btn btn-ghost" href="booking.html">Plan an event</a>
-        </div>
-      </div>
-      <div class="about-hero-card reveal" aria-label="AGE at a glance">
-        <div class="hero-logo-wrap"><img src="assets/logo.png" alt="AGE emblem"></div>
-        <div class="hero-stat"><strong>47+</strong><span>years of experience</span></div>
-        <div class="hero-stat"><strong>1,000+</strong><span>events managed</span></div>
-        <div class="hero-stat"><strong>Pakistan</strong><span>nationwide reach</span></div>
+<main class="aboutx">
+<section class="ax-hero">
+  <div class="ax-container ax-hero-grid">
+    <div class="ax-reveal">
+      <span class="ax-eyebrow">1980 → today · Gujranwala → Pakistan</span>
+      <h1>47+ years of making moments matter.</h1>
+      <p>Asia Group of Events has evolved from a local event operation into a multi-service events group covering planning, production, décor, hospitality, catering, entertainment and corporate experiences.</p>
+      <div class="ax-actions"><a class="ax-btn ax-btn-gold" href="#journey">Explore our journey ↓</a><a class="ax-btn ax-btn-outline" href="booking.html">Plan an event</a></div>
+    </div>
+    <div class="ax-glass ax-reveal">
+      <div class="ax-logo-box"><img src="assets/logo.png" alt="Asia Group of Events logo"></div>
+      <div class="ax-mini-stats">
+        <div class="ax-mini-stat"><strong>1,000+</strong><span>Events</span></div><div class="ax-mini-stat"><strong>67+</strong><span>Corporate clients</span></div><div class="ax-mini-stat"><strong>780+</strong><span>Celebrations</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="story">
-    <div class="container">
-      <div class="section-head about-intro-head">
-        <div><div class="kicker">The AGE story</div><h2>A family business that kept evolving.</h2></div>
-        <p>From tents and décor to corporate productions, catering, venues and public events, every chapter added another capability.</p>
-      </div>
+<section class="ax-section" id="journey">
+<div class="ax-container">
+  <div class="ax-section-head ax-reveal"><div><div class="ax-kicker">The AGE story</div><h2>Three chapters. One growing group.</h2></div><p>Explore the business through the ideas that shaped it — relationships, capability and a distinctly Pakistani understanding of how people celebrate and connect.</p></div>
+  <div class="ax-story-grid">
+    <article class="ax-story ax-reveal"><span class="num">01 / FOUNDATION</span><h3>Built on trust.</h3><p>AGE began in 1980 and grew by delivering dependable event setups, hospitality and service for people who wanted things done properly.</p><button type="button" data-go="history">Jump to the timeline →</button></article>
+    <article class="ax-story dark ax-reveal"><span class="num">02 / EXPANSION</span><h3>More than one service.</h3><p>Décor, catering, interiors, venues, PR and entertainment gradually became connected parts of the AGE family.</p><button type="button" data-go="values">See what drives us →</button></article>
+    <article class="ax-story ax-reveal"><span class="num">03 / TODAY</span><h3>One team, many occasions.</h3><p>From weddings and corporate productions to public, educational, sports and cultural events, AGE now works across many formats.</p><button type="button" data-go="coverage">See our reach →</button></article>
+  </div>
+</div>
+</section>
 
-      <div class="story-grid">
-        <div class="story-feature reveal">
-          <span class="story-number">01</span>
-          <h3>Built on relationships</h3>
-          <p>Long-term client relationships, careful execution and dependable teams remain at the centre of how AGE works.</p>
-          <button type="button" class="text-btn" data-scroll-to="timeline">See the milestones →</button>
-        </div>
-        <div class="story-feature story-feature-dark reveal">
-          <span class="story-number">02</span>
-          <h3>Designed around the whole experience</h3>
-          <p>Planning, production, décor, hospitality, catering, PR and entertainment can work together instead of being treated as separate pieces.</p>
-          <button type="button" class="text-btn light" data-scroll-to="capabilities">Explore our approach →</button>
-        </div>
-        <div class="story-feature reveal">
-          <span class="story-number">03</span>
-          <h3>Made for Pakistan</h3>
-          <p>Based in Gujranwala and serving clients across Pakistan, AGE brings local knowledge with professional event-management standards.</p>
-          <button type="button" class="text-btn" data-scroll-to="coverage">See our reach →</button>
-        </div>
-      </div>
+<section class="ax-section alt" id="history">
+<div class="ax-container">
+  <div class="ax-section-head ax-reveal"><div><div class="ax-kicker">Interactive timeline</div><h2>Open the chapters.</h2></div><p>Filter the history by stage, then open a year to reveal what changed.</p></div>
+  <div class="ax-filter-row" role="group" aria-label="Filter history"><button class="ax-filter active" data-filter="all">All</button><button class="ax-filter" data-filter="origins">Origins</button><button class="ax-filter" data-filter="expansion">Expansion</button><button class="ax-filter" data-filter="modern">Modern AGE</button></div>
+  <div class="ax-progress"><span id="axProgress"></span></div>
+  <div class="ax-timeline" id="axTimeline">
+    <details class="ax-event ax-reveal" data-group="origins" open><summary><span class="ax-year">1980</span><span><strong>Asia Tent Service</strong><small>The foundation of the AGE story in Gujranwala.</small></span></summary><div class="ax-event-body"><p>AGE traces its roots to Asia Tent Service, establishing the operational foundation that would grow into a broader events group.</p><span class="ax-tag">Origins</span></div></details>
+    <details class="ax-event ax-reveal" data-group="origins"><summary><span class="ax-year">1990</span><span><strong>Asia Party Decorators</strong><small>Décor becomes a dedicated part of the operation.</small></span></summary><div class="ax-event-body"><p>Event styling and décor become a dedicated capability, adding a stronger visual dimension to the group's offering.</p><span class="ax-tag">Origins</span></div></details>
+    <details class="ax-event ax-reveal" data-group="origins"><summary><span class="ax-year">1998</span><span><strong>Second generation joins</strong><small>Mr. Abubakar Saleem Butt joins the family business.</small></span></summary><div class="ax-event-body"><p>The second generation begins contributing to the business, helping carry the family operation into its next stage.</p><span class="ax-tag">Origins</span></div></details>
+    <details class="ax-event ax-reveal" data-group="expansion"><summary><span class="ax-year">2004</span><span><strong>Asia Catering</strong><small>Hospitality and catering become part of the group.</small></span></summary><div class="ax-event-body"><p>Asia Catering expands AGE's ability to manage food, hospitality and guest experience as part of complete events.</p><span class="ax-tag">Expansion</span></div></details>
+    <details class="ax-event ax-reveal" data-group="expansion"><summary><span class="ax-year">2013</span><span><strong>AGE Interiors & Florasia</strong><small>Interiors, floral work and styling broaden the offering.</small></span></summary><div class="ax-event-body"><p>Interior, floral and styling capabilities strengthen AGE's end-to-end production approach.</p><span class="ax-tag">Expansion</span></div></details>
+    <details class="ax-event ax-reveal" data-group="expansion"><summary><span class="ax-year">2016</span><span><strong>AGE umbrella expands</strong><small>Mezbaan Marquee, Eventurus Marquee & Event Complex and AGE Zaiqy join the portfolio.</small></span></summary><div class="ax-event-body"><p>The AGE umbrella brings venues, food and experiences together into a wider family of event-related brands.</p><span class="ax-tag">Expansion</span></div></details>
+    <details class="ax-event ax-reveal" data-group="modern"><summary><span class="ax-year">2018</span><span><strong>Blue Chips PR</strong><small>PR and corporate communications become a dedicated capability.</small></span></summary><div class="ax-event-body"><p>Blue Chips PR adds public relations, corporate communications and activation capabilities.</p><span class="ax-tag">Modern AGE</span></div></details>
+    <details class="ax-event ax-reveal" data-group="modern"><summary><span class="ax-year">Today</span><span><strong>Asia Group of Events</strong><small>A multi-service event group serving clients across Pakistan.</small></span></summary><div class="ax-event-body"><p>Today AGE brings event management, entertainment, weddings, corporate events, sports, education, catering, exhibitions, culture and more under one group.</p><span class="ax-tag">Modern AGE</span></div></details>
+  </div>
+</div>
+</section>
+
+<section class="ax-section" id="values">
+<div class="ax-container">
+  <div class="ax-section-head ax-reveal"><div><div class="ax-kicker">What drives us</div><h2>Choose a principle.</h2></div><p>Tap a value to change the panel and see how it translates into the way AGE works.</p></div>
+  <div class="ax-values ax-reveal">
+    <div class="ax-tabs" role="tablist" aria-label="AGE core values">
+      <button class="ax-tab active" role="tab" aria-selected="true" data-value="professionalism">Professionalism</button><button class="ax-tab" role="tab" aria-selected="false" data-value="creativity">Creativity</button><button class="ax-tab" role="tab" aria-selected="false" data-value="reliability">Reliability</button><button class="ax-tab" role="tab" aria-selected="false" data-value="respect">Respect</button><button class="ax-tab" role="tab" aria-selected="false" data-value="excellence">Excellence</button>
     </div>
-  </section>
+    <div class="ax-panel"><div class="ax-icon" id="valueIcon">01</div><div><div class="ax-kicker" id="valueName">Professionalism</div><h3 id="valueTitle">Details matter.</h3><p id="valueText">Clear planning, organised teams and responsible execution help every event move with confidence from first briefing to final wrap.</p></div></div>
+  </div>
+</div>
+</section>
 
-  <section class="section section-alt" id="timeline">
-    <div class="container" data-timeline>
-      <div class="section-head">
-        <div><div class="kicker">Our timeline</div><h2>Tap through the chapters.</h2><p>Filter the story, then open any milestone for more detail.</p></div>
-        <div class="timeline-counter" aria-live="polite"><strong data-timeline-count>8</strong><span>milestones shown</span></div>
-      </div>
+<section class="ax-section alt">
+<div class="ax-container">
+  <div class="ax-section-head ax-reveal"><div><div class="ax-kicker">The people behind it</div><h2>Meet the leadership team.</h2></div><p>Select a team member to learn about their role within AGE.</p></div>
+  <div class="ax-team-grid">
+    <button class="ax-person active ax-reveal" data-person="ceo"><span class="idx">01</span><strong>Abubakar Saleem Butt</strong><span>CEO</span></button>
+    <button class="ax-person ax-reveal" data-person="md"><span class="idx">02</span><strong>Mrs. Abubakar Butt</strong><span>Managing Director</span></button>
+    <button class="ax-person ax-reveal" data-person="ops"><span class="idx">03</span><strong>Umair Khalid</strong><span>Director Operations</span></button>
+    <button class="ax-person ax-reveal" data-person="gm"><span class="idx">04</span><strong>Raza Shah</strong><span>General Manager</span></button>
+    <button class="ax-person ax-reveal" data-person="agm"><span class="idx">05</span><strong>Naveed Ahmad</strong><span>Assistant General Manager</span></button>
+    <button class="ax-person ax-reveal" data-person="pr"><span class="idx">06</span><strong>Sana Rasool</strong><span>Public Relation Officer</span></button>
+  </div>
+  <div class="ax-team-detail ax-reveal"><span class="role" id="personRole">CEO</span><h3 id="personName">Abubakar Saleem Butt</h3><p id="personText">Leads the group's direction, growth and long-term vision while keeping AGE's family-business foundation connected to modern event management.</p></div>
+</div>
+</section>
 
-      <div class="timeline-controls" aria-label="Filter AGE history">
-        <button class="timeline-filter" type="button" data-timeline-filter="all" aria-pressed="true">All chapters</button>
-        <button class="timeline-filter" type="button" data-timeline-filter="origins" aria-pressed="false">Origins</button>
-        <button class="timeline-filter" type="button" data-timeline-filter="expansion" aria-pressed="false">Expansion</button>
-        <button class="timeline-filter" type="button" data-timeline-filter="modern" aria-pressed="false">Modern AGE</button>
-      </div>
-      <div class="timeline-progress" aria-hidden="true"><span data-timeline-progress></span></div>
+<section class="ax-section" id="coverage">
+<div class="ax-container">
+  <div class="ax-section-head ax-reveal"><div><div class="ax-kicker">Where we work</div><h2>Rooted in Gujranwala. Ready for Pakistan.</h2></div><p>AGE is based in Gujranwala and serves clients across Punjab and Pakistan, with projects arranged in other provinces on request.</p></div>
+  <div class="ax-cities ax-reveal"><span class="ax-city featured">Gujranwala</span><span class="ax-city featured">Lahore</span><span class="ax-city">Islamabad</span><span class="ax-city">Rawalpindi</span><span class="ax-city">Faisalabad</span><span class="ax-city">Sialkot</span><span class="ax-city">Wazirabad</span><span class="ax-city">Gujrat</span><span class="ax-city">Sheikhupura</span><span class="ax-city">Hafizabad</span><span class="ax-city">Narowal</span><span class="ax-city">Mandi Bahauddin</span><span class="ax-city">Other provinces on request</span></div>
+</div>
+</section>
 
-      <div class="timeline">
-        <details class="timeline-item" data-timeline-item data-group="origins" open>
-          <summary><span class="timeline-year">1980</span><span><strong>Asia Tent Service</strong><small>The journey begins in Gujranwala with event setup and hospitality services.</small></span></summary>
-          <div class="timeline-content"><p>AGE traces its roots to Asia Tent Service, establishing the operational foundation that would grow into a multi-service events group.</p><span class="timeline-tag">Origins</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="origins">
-          <summary><span class="timeline-year">1990</span><span><strong>Asia Party Decorators</strong><small>Décor and event styling become a dedicated part of the operation.</small></span></summary>
-          <div class="timeline-content"><p>Décor becomes a dedicated capability, adding visual design and event styling to the group's growing event offering.</p><span class="timeline-tag">Origins</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="origins">
-          <summary><span class="timeline-year">1998</span><span><strong>Second generation joins</strong><small>Mr. Abubakar Saleem Butt joins and helps take the business into its next chapter.</small></span></summary>
-          <div class="timeline-content"><p>The second generation begins contributing to the family business, helping AGE expand its professional event-management approach.</p><span class="timeline-tag">Origins</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="expansion">
-          <summary><span class="timeline-year">2004</span><span><strong>Asia Catering</strong><small>The group expands into professional catering and hospitality.</small></span></summary>
-          <div class="timeline-content"><p>Asia Catering broadens the group's ability to manage food, hospitality and guest experience as part of complete events.</p><span class="timeline-tag">Expansion</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="expansion">
-          <summary><span class="timeline-year">2013</span><span><strong>AGE Interiors & Florasia</strong><small>Interior design, décor and floral capabilities broaden the event offering.</small></span></summary>
-          <div class="timeline-content"><p>Interior, floral and styling capabilities strengthen AGE's end-to-end event production.</p><span class="timeline-tag">Expansion</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="expansion">
-          <summary><span class="timeline-year">2016</span><span><strong>Asia Group of Events umbrella</strong><small>Mezbaan Marquee, Eventurus Marquee & Event Complex and AGE Zaiqy join the expanding portfolio.</small></span></summary>
-          <div class="timeline-content"><p>The AGE umbrella brings venues, food and youth-focused experiences into a broader family of event brands.</p><span class="timeline-tag">Expansion</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="modern">
-          <summary><span class="timeline-year">2018</span><span><strong>Blue Chips PR</strong><small>A dedicated PR and corporate communications company is launched.</small></span></summary>
-          <div class="timeline-content"><p>Blue Chips PR adds public relations, corporate communications and activation capabilities for corporate, government and education work.</p><span class="timeline-tag">Modern AGE</span></div>
-        </details>
-        <details class="timeline-item" data-timeline-item data-group="modern">
-          <summary><span class="timeline-year">2019</span><span><strong>Events by Ruhaab & After Hours</strong><small>Specialist décor and youth-focused event brands strengthen the AGE family.</small></span></summary>
-          <div class="timeline-content"><p>Specialist brands further diversify the group's creative and entertainment offering.</p><span class="timeline-tag">Modern AGE</span></div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="capabilities">
-    <div class="container">
-      <div class="section-head"><div><div class="kicker">What drives us</div><h2>One group. Five principles.</h2></div><p>Use the tabs to see what each principle means in practice.</p></div>
-      <div class="principles-wrap">
-        <div class="principle-tabs" role="tablist" aria-label="AGE values">
-          <button type="button" class="principle-tab active" role="tab" aria-selected="true" data-principle="professionalism">Professionalism</button>
-          <button type="button" class="principle-tab" role="tab" aria-selected="false" data-principle="creativity">Creativity</button>
-          <button type="button" class="principle-tab" role="tab" aria-selected="false" data-principle="reliability">Reliability</button>
-          <button type="button" class="principle-tab" role="tab" aria-selected="false" data-principle="respect">Respect</button>
-          <button type="button" class="principle-tab" role="tab" aria-selected="false" data-principle="excellence">Excellence</button>
-        </div>
-        <div class="principle-panel" aria-live="polite">
-          <div class="principle-icon" data-principle-icon>01</div>
-          <div><div class="kicker" data-principle-kicker>Professionalism</div><h3 data-principle-title>Details matter.</h3><p data-principle-text>Clear planning, organised teams and responsible execution help every event move with confidence from first briefing to final wrap.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="coverage">
-    <div class="container">
-      <div class="section-head"><div><div class="kicker">Our reach</div><h2>Local roots, nationwide capability.</h2></div><p>AGE is based in Gujranwala and serves clients across major cities in Pakistan, with wider coverage available on request.</p></div>
-      <div class="city-cloud" aria-label="Cities served by AGE">
-        <span class="city-pill featured">Gujranwala</span><span class="city-pill">Lahore</span><span class="city-pill">Islamabad</span><span class="city-pill">Rawalpindi</span><span class="city-pill">Faisalabad</span><span class="city-pill">Sialkot</span><span class="city-pill">Wazirabad</span><span class="city-pill">Gujrat</span><span class="city-pill">Sheikhupura</span><span class="city-pill">Hafizabad</span><span class="city-pill">Narowal</span><span class="city-pill">Mandi Bahauddin</span><span class="city-pill">Punjab</span><span class="city-pill">Other provinces on request</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head"><div><div class="kicker">The people behind the work</div><h2>Meet the AGE leadership.</h2></div><p>Open a profile to see each person's role.</p></div>
-      <div class="team-interactive">
-        <button type="button" class="team-card active" data-team="ceo"><span class="team-index">01</span><strong>Abubakar Saleem Butt</strong><span>CEO</span><b>View role +</b></button>
-        <button type="button" class="team-card" data-team="md"><span class="team-index">02</span><strong>Mrs. Abubakar Butt</strong><span>Managing Director</span><b>View role +</b></button>
-        <button type="button" class="team-card" data-team="ops"><span class="team-index">03</span><strong>Umair Khalid</strong><span>Director Operations</span><b>View role +</b></button>
-        <button type="button" class="team-card" data-team="gm"><span class="team-index">04</span><strong>Raza Shah</strong><span>General Manager</span><b>View role +</b></button>
-        <button type="button" class="team-card" data-team="agm"><span class="team-index">05</span><strong>Naveed Ahmad</strong><span>Assistant General Manager</span><b>View role +</b></button>
-        <button type="button" class="team-card" data-team="pr"><span class="team-index">06</span><strong>Sana Rasool</strong><span>Public Relation Officer</span><b>View role +</b></button>
-      </div>
-      <div class="team-detail" aria-live="polite">
-        <div class="team-detail-label">CURRENT PROFILE</div>
-        <h3 data-team-title>Abubakar Saleem Butt</h3>
-        <p data-team-role>CEO</p>
-        <div class="team-detail-line"></div>
-        <p data-team-text>Leads the group's direction, growth and long-term vision while keeping AGE's family-business foundation connected to modern event management.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section about-final-cta">
-    <div class="container cta-inner">
-      <div><div class="kicker">Ready when you are</div><h2>Let's make your next event an AGE experience.</h2><p>Tell us what you are planning and our team can take it from idea to execution.</p></div>
-      <a class="btn btn-primary" href="booking.html">Start an enquiry →</a>
-    </div>
-  </section>
+<section class="ax-section" style="padding-top:20px"><div class="ax-container"><div class="ax-cta ax-reveal"><div><div class="ax-kicker" style="color:var(--age-gold)">Ready when you are</div><h2>Let's make your next event an AGE experience.</h2><p>Tell us what you are planning and our team can take it from idea to execution.</p></div><a class="ax-btn ax-btn-gold" href="booking.html">Start an enquiry →</a></div></div></section>
 </main>
 
 <footer class="footer">
@@ -187,65 +133,19 @@
   </div>
   <div class="container footer-bottom"><span>© 1980–2026 Asia Group of Events. All rights reserved.</span><span>Gujranwala · Lahore · Islamabad · Pakistan</span></div>
 </footer>
-
-<script src="config.js"></script>
-<script src="script.js"></script>
+<script src="config.js"></script><script src="script.js"></script>
 <script>
 (function(){
-  const root=document;
-  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const scrollButtons=root.querySelectorAll('[data-scroll-to]');
-  scrollButtons.forEach(btn=>btn.addEventListener('click',()=>{
-    const target=root.getElementById(btn.dataset.scrollTo);
-    if(target) target.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
-  }));
-
-  const principles={
-    professionalism:{kicker:'Professionalism',title:'Details matter.',text:'Clear planning, organised teams and responsible execution help every event move with confidence from first briefing to final wrap.',icon:'01'},
-    creativity:{kicker:'Creativity',title:'Make it feel like yours.',text:'Ideas should reflect the purpose, audience and personality of an event rather than follow a one-size-fits-all formula.',icon:'02'},
-    reliability:{kicker:'Reliability',title:'Do what was promised.',text:'Strong coordination and dependable execution create confidence for clients, suppliers, guests and every team involved.',icon:'03'},
-    respect:{kicker:'Respect',title:'People come first.',text:'We value clients, colleagues, suppliers, venues and guests, because successful events are built through good relationships.',icon:'04'},
-    excellence:{kicker:'Excellence',title:'Keep raising the standard.',text:'Every project is an opportunity to improve the detail, polish and experience that guests take away with them.',icon:'05'}
-  };
-  const pTabs=root.querySelectorAll('[data-principle]');
-  const pIcon=root.querySelector('[data-principle-icon]'),pKicker=root.querySelector('[data-principle-kicker]'),pTitle=root.querySelector('[data-principle-title]'),pText=root.querySelector('[data-principle-text]');
-  pTabs.forEach(tab=>tab.addEventListener('click',()=>{
-    const data=principles[tab.dataset.principle]; if(!data)return;
-    pTabs.forEach(t=>{const active=t===tab;t.classList.toggle('active',active);t.setAttribute('aria-selected',String(active));});
-    pIcon.textContent=data.icon;pKicker.textContent=data.kicker;pTitle.textContent=data.title;pText.textContent=data.text;
-  }));
-
-  const team={
-    ceo:{name:'Abubakar Saleem Butt',role:'CEO',text:"Leads the group's direction, growth and long-term vision while keeping AGE's family-business foundation connected to modern event management."},
-    md:{name:'Mrs. Abubakar Butt',role:'Managing Director',text:'Supports the overall management of AGE and helps maintain the standards, relationships and continuity that keep the group moving forward.'},
-    ops:{name:'Umair Khalid',role:'Director Operations',text:'Oversees operational coordination and helps turn event plans into organised, practical execution across projects.'},
-    gm:{name:'Raza Shah',role:'General Manager',text:'Supports day-to-day management and coordination, helping teams stay aligned with client expectations and event requirements.'},
-    agm:{name:'Naveed Ahmad',role:'Assistant General Manager',text:'Supports management and operational workflows, helping keep projects coordinated from planning through delivery.'},
-    pr:{name:'Sana Rasool',role:'Public Relation Officer',text:'Supports public relations and communication, helping AGE maintain clear connections with clients, partners and audiences.'}
-  };
-  const teamCards=root.querySelectorAll('[data-team]');
-  const tTitle=root.querySelector('[data-team-title]'),tRole=root.querySelector('[data-team-role]'),tText=root.querySelector('[data-team-text]');
-  teamCards.forEach(card=>card.addEventListener('click',()=>{
-    const data=team[card.dataset.team];if(!data)return;
-    teamCards.forEach(c=>c.classList.toggle('active',c===card));
-    tTitle.textContent=data.name;tRole.textContent=data.role;tText.textContent=data.text;
-  }));
-
-  const timeline=root.querySelector('[data-timeline]');
-  if(timeline){
-    const filters=timeline.querySelectorAll('[data-timeline-filter]');
-    const items=timeline.querySelectorAll('[data-timeline-item]');
-    const count=timeline.querySelector('[data-timeline-count]');
-    const progress=timeline.querySelector('[data-timeline-progress]');
-    filters.forEach(btn=>btn.addEventListener('click',()=>{
-      const filter=btn.dataset.timelineFilter;let visible=0;
-      items.forEach(item=>{const show=filter==='all'||item.dataset.group===filter;item.hidden=!show;if(show)visible++;});
-      filters.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
-      if(count)count.textContent=visible;
-      if(progress)progress.style.width=Math.max(12.5,(visible/items.length)*100)+'%';
-    }));
-  }
+ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{const t=document.getElementById(b.dataset.go);if(t)t.scrollIntoView({behavior:reduce?'auto':'smooth'});}));
+ const events=[...document.querySelectorAll('.ax-event')], filters=[...document.querySelectorAll('.ax-filter')], progress=document.getElementById('axProgress');
+ function filterHistory(group){let n=0;events.forEach(e=>{const show=group==='all'||e.dataset.group===group;e.classList.toggle('ax-hidden',!show);if(show)n++;});filters.forEach(b=>b.classList.toggle('active',b.dataset.filter===group));progress.style.width=(n/events.length*100)+'%';}
+ filters.forEach(b=>b.addEventListener('click',()=>filterHistory(b.dataset.filter)));filterHistory('all');
+ const values={professionalism:['01','Professionalism','Details matter.','Clear planning, organised teams and responsible execution help every event move with confidence from first briefing to final wrap.'],creativity:['02','Creativity','Make it feel like yours.','Ideas should reflect the purpose, audience and personality of an event rather than follow a one-size-fits-all formula.'],reliability:['03','Reliability','Do what was promised.','Strong coordination and dependable execution create confidence for clients, suppliers, venues and every team involved.'],respect:['04','Respect','People come first.','We value clients, colleagues, suppliers, venues and guests, because successful events are built through good relationships.'],excellence:['05','Excellence','Keep raising the standard.','Every project is an opportunity to improve the detail, polish and experience that guests take away with them.']};
+ const valueTabs=[...document.querySelectorAll('.ax-tab')]; valueTabs.forEach(t=>t.addEventListener('click',()=>{const v=values[t.dataset.value];valueTabs.forEach(x=>{x.classList.toggle('active',x===t);x.setAttribute('aria-selected',x===t)});valueIcon.textContent=v[0];valueName.textContent=v[1];valueTitle.textContent=v[2];valueText.textContent=v[3];}));
+ const people={ceo:['CEO','Abubakar Saleem Butt',"Leads the group's direction, growth and long-term vision while keeping AGE's family-business foundation connected to modern event management."],md:['Managing Director','Mrs. Abubakar Butt','Supports the overall management of AGE and helps maintain the standards, relationships and continuity that keep the group moving forward.'],ops:['Director Operations','Umair Khalid','Oversees operational coordination and helps turn event plans into organised, practical execution across projects.'],gm:['General Manager','Raza Shah','Supports day-to-day management and coordination, helping teams stay aligned with client expectations and event requirements.'],agm:['Assistant General Manager','Naveed Ahmad','Supports management and operational workflows, helping keep projects coordinated from planning through delivery.'],pr:['Public Relation Officer','Sana Rasool','Supports public relations and communication, helping AGE maintain clear connections with clients, partners and audiences.']};
+ const peopleBtns=[...document.querySelectorAll('.ax-person')];peopleBtns.forEach(b=>b.addEventListener('click',()=>{const p=people[b.dataset.person];peopleBtns.forEach(x=>x.classList.toggle('active',x===b));personRole.textContent=p[0];personName.textContent=p[1];personText.textContent=p[2];}));
+ const reveals=[...document.querySelectorAll('.ax-reveal')];if('IntersectionObserver' in window&&!reduce){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});reveals.forEach((e,i)=>{e.style.transitionDelay=Math.min(i%4*60,180)+'ms';io.observe(e);});}else reveals.forEach(e=>e.classList.add('show'));
 })();
 </script>
-</body>
-</html>
+</body></html>
