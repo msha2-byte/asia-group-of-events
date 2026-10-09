@@ -10,8 +10,8 @@ NEW IN THIS VERSION
 - Blog email preference page for subscribe/unsubscribe requests.
 - Refund/cancellation policy and transparent-pricing language.
 - Media & Licenses audit page.
-- Instagram is a direct link only; no Instagram SDK/embed is loaded.
-- No remote images or font SDKs are embedded in this build.
+- Homepage includes three supplied public Instagram Reel embeds; Instagram embed SDK loads only after optional consent.
+- Blog cards use remote Unsplash stock photographs; these load from Unsplash when the blog page is opened.
 - CSS uses local system font stacks and original CSS artwork.
 - Accessibility improvements: skip link, keyboard focus states, semantic controls, reduced-motion support, labels, and stronger contrast.
 - Demo payment page collects no card data and does not process money.

@@ -1,0 +1,27 @@
+AGE PORTFOLIO UPDATE NOTES
+
+This package includes the previous complete AGE website and an upgraded portfolio.html page.
+
+Portfolio page features:
+- 10 project cards using the project names already present in the existing AGE project list.
+- Interactive filters for Corporate, DHA/public ceremonies, Community/festivals, Education/sports, and Shows/exhibitions.
+- Expandable project details on each card.
+- Uses local photos supplied with the previous package in assets/event-photo-1.png through event-photo-4.png.
+- Mobile-responsive card layout and reduced-motion support.
+
+Important photo accuracy note:
+The public portfolio URL could not be fetched directly during this build. The cards therefore use the project list available in the existing AGE package and the supplied event images as representative imagery. The page explicitly avoids claiming those images are verified photographs from a specific named project. Replace each representative photo with the matching original project photo when you have confirmed it.
+
+GitHub Pages upload:
+1. Extract this ZIP.
+2. Upload the files and folders inside the extracted folder to the root of the existing GitHub repository.
+3. Keep assets/ at the repository root beside index.html and portfolio.html.
+4. Commit changes to the main branch.
+5. Wait for the Pages deployment to finish, then hard-refresh the site (Ctrl+Shift+R).
+Do not upload the ZIP file itself and do not put the files in an extra nested folder.
+
+
+LATEST ADDITIONS (Instagram + blog visuals)
+- Added three supplied public Instagram Reel embeds to index.html.
+- The official Instagram embed SDK loads only after visitors choose Allow optional in the privacy banner; direct links remain available if a Reel cannot embed.
+- Blog cards now use event/catering stock photography hosted on Unsplash. Unsplash says its images are generally available for commercial use under its license, but identifiable people, brands and property can still involve separate rights (see Unsplash Help Center).
